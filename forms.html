@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Forms</title>
+</head>
+<body>
+		<header>
+			this is header
+			<nav>
+				<ul>
+					<li>Links1</li>
+					<li>Links2</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				this is section
+
+			</section>	
+			<aside>
+				This is aside
+			</aside>
+		</main>
+		<form method="GET" action="#">
+			First Name <input type="text" name="firstname"><br>
+			Last Name <input type="text" name="lastname"><br>
+			Email <input type="email" name="email" required><br>
+			Birthday <input type="date" name="birthday"><br>
+			Password <input type="password" name="password" minlength="8"><br>
+			Gender <br>
+			<input type="radio" name="gender" value="male">Male <br>
+			<input type="radio" name="gender" value="female">Female <br>
+			Hobbies <br>
+			<input type="checkbox" value="cricket"> Cricket<br>
+			<input type="checkbox" value="football"> Football<br>
+			<select name="city">
+				<option value="hyderabad">Hyderabad</option>
+				<option value="rajahmundry">Rajahmundry</option>
+			</select>
+			<input type="submit" value="Register">
+			<!-- <input type="reset" value="Reset"> -->
+		</form>
+
+		<h1>Method: HTTP request Get method</h1>
+		<form action="#">
+			<input type="text" name="name" placeholder="Enter Name">
+			<input type="password" name="password" placeholder="Enter Password">
+			<label for="male">Male:</label>
+			<input type="radio" name="gender" id="male" value="male">
+			<label for="female">Female:</label>
+			<input type="radio" name="gender" id="female" value="female">
+
+			<select name="color">
+				<option value="red" name="color">Red</option>
+				<option value="green" name="color">Green</option>
+				<option value="blue" name="color">Blue</option>
+			</select>
+
+			<input type="submit" name="Submit" value="Submit">
+		</form>
+		<h3>Method: HTTP request Post</h3>
+		<form method="POST">
+				<input type="text" name="name" required>
+				<input type="email" name="email" required>
+				<input type="text" name="name" pattern=".{3,5}" required title="'Text must be inside 3 to 6 characters'">
+				<input type="password" name="password" required>
+				<input type="submit">
+				<button>Submit</button>
+		</form>
+
+		<label>Username: <input type="text"></label>
+		<label for="username">Username:</label>
+		<input id="username" type="text">
+
+
+		<!-- <label>
+			<input type="radio" name="gender" value="male"> Male
+			<input type="radio" name="gender" value="female"> Female
+		</label> -->
+		
+
+
+
+</body>
+</html>

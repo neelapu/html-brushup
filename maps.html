@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image maps</title>
+	<style type="text/css">
+		.rect { position: absolute; left: 50px; top: 10px; width: 50px; height: 50px; background: rgba(255,255,0,.5); transition: .3s all; }
+		.circ { position: absolute; left: 120px; top: 120px; width: 60px; height: 60px; background: rgba(255,0,0,.5); border-radius: 100%; z-index: 1; transition: .3s all; }
+		.circI.cimg { position: absolute; left: 200px; top: 200px; width: 80px; height: 80px; background-image:url("imgs/03.png"); border-radius: 100%; z-index: 1; transition: .3s all; background-size: contain; border: 2px solid #333; }
+		.rect:hover { background: rgba(250,150,0,.8); }
+		.circ:hover { background: rgba(250,150,0,.8); }
+	</style>
+</head>
+<body>
+	<map name="imgmap">
+		<area shape="rect" coords="50,10,100,60" href="http://www.google.com" class="rect" />
+		<area shape="circle" coords="150,150,30" href="http://www.neelapu.com" class="circ" />
+		<area shape="circle" coords="200,200,40" href="http://www.neelapu.com" class="circI cimg" />
+	</map>
+	<div style="position: absolute;">
+		<img src="imgs/01.png" alt="" usemap="#imgmap">
+		<!-- <span style="position: absolute; left: 50px; top: 10px; width: 50px; height: 50px; background: rgba(255,255,0,.5);"></span>
+		<span style="position: absolute; left: 120px; top: 120px; width: 60px; height: 60px; background: rgba(255,255,0,.5); border-radius: 100%;"></span> -->
+	</div>
+</body>
+</html>
